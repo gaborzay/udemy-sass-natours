@@ -26,15 +26,6 @@
     box-shadow: 0 .5rem 1rem rgba($color-black, .2);
   }
 
-  &--white {
-    background-color: white;
-    color: $color-grey-dark;
-
-    &::after {
-      background-color: $color-white;
-    }
-  }
-
   &::after {
     content: "";
     display: inline-block;
@@ -52,6 +43,24 @@
   &--animated {
     animation: moveInBottom .5s ease-out .75s;
     animation-fill-mode: backwards;
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-grey-dark;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-primary;
+    }
   }
 }
 
